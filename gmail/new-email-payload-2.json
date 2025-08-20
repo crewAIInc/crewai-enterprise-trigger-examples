@@ -1,0 +1,173 @@
+{
+  "result": {
+    "id": "xyz789def456ghi123",
+    "threadId": "xyz789def456ghi123",
+    "labelIds": [
+      "UNREAD",
+      "CATEGORY_PROMOTIONS",
+      "INBOX"
+    ],
+    "snippet": "Performance alert from user-api. MonitoringService View on MonitoringService Performance degradation detected We notified recently active members in the user-api project of this issue High response times detected authentication endpoint avg 2.5s threshold 1.0s",
+    "payload": {
+      "partId": "",
+      "mimeType": "multipart/alternative",
+      "filename": "",
+      "headers": [
+        {
+          "name": "Delivered-To",
+          "value": "sre-team@acmetech.io"
+        },
+        {
+          "name": "Received",
+          "value": "by 2002:a17:906:8095:b0:9a1:2b5c:3e7f with SMTP id gh21csp1234567xyz;        Thu, 16 Dec 2024 14:45:22 -0500 (EST)"
+        },
+        {
+          "name": "X-Google-Smtp-Source",
+          "value": "AGHT+IFSampleGoogleSmtpSourceForPerformanceTesting987654321aBcDeF"
+        },
+        {
+          "name": "X-Received",
+          "value": "by 2002:a05:620a:1a3b:b0:7e8:abc:def1 with SMTP id xy12cd34ef567-8gh90ijklm12nr3456789b.8.1734382522000;        Thu, 16 Dec 2024 14:45:22 -0500 (EST)"
+        },
+        {
+          "name": "ARC-Seal",
+          "value": "i=1; a=rsa-sha256; t=1734382522; cv=none;        d=google.com; s=arc-20240605;        b=TestArcSealSignatureForPerformancePayloadGeneration12345abcdef67890"
+        },
+        {
+          "name": "ARC-Message-Signature",
+          "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;        h=to:reply-to:message-id:list-id:date:from:subject:mime-version         :dkim-signature;        bh=testPerformanceHashForSamplePayload123=;        fh=testPerformanceHashFinalForSamplePayload456=;        b=TestPerformanceMessageSignatureForSamplePayload98765fedcba;"
+        },
+        {
+          "name": "ARC-Authentication-Results",
+          "value": "i=1; mx.google.com;       dkim=pass header.i=@monitoringservice.com header.s=perf header.b=TestPerfDkim456;       spf=pass (google.com: domain of bounces+test789-sre=acmetech.io@notifications.monitoringservice.com designates 203.0.113.42 as permitted sender) smtp.mailfrom=\"bounces+test789-sre=acmetech.io@notifications.monitoringservice.com\";       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=notifications.monitoringservice.com"
+        },
+        {
+          "name": "Return-Path",
+          "value": "<bounces+test789-sre=acmetech.io@notifications.monitoringservice.com>"
+        },
+        {
+          "name": "Received",
+          "value": "from perf-alerts.notifications.monitoringservice.com (perf-alerts.notifications.monitoringservice.com. [203.0.113.42])        by mx.google.com with ESMTPS id xy12cd34ef567-8gh90ijklm12si4567890c.123.2024.12.16.14.45.21        for <sre-team@acmetech.io>        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 16 Dec 2024 14:45:22 -0500 (EST)"
+        },
+        {
+          "name": "Received-SPF",
+          "value": "pass (google.com: domain of bounces+test789-sre=acmetech.io@notifications.monitoringservice.com designates 203.0.113.42 as permitted sender) client-ip=203.0.113.42;"
+        },
+        {
+          "name": "Authentication-Results",
+          "value": "mx.google.com;       dkim=pass header.i=@monitoringservice.com header.s=perf header.b=TestPerfDkim456;       spf=pass (google.com: domain of bounces+test789-sre=acmetech.io@notifications.monitoringservice.com designates 203.0.113.42 as permitted sender) smtp.mailfrom=\"bounces+test789-sre=acmetech.io@notifications.monitoringservice.com\";       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=notifications.monitoringservice.com"
+        },
+        {
+          "name": "DKIM-Signature",
+          "value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=monitoringservice.com; h=content-type:mime-version:subject:from:date:list-id:reply-to:to:cc: content-type:date:from:subject:to; s=perf; bh=testPerformanceDkimBodyHashForTesting789=; b=TestPerformanceDkimSignatureForMonitoringService98765fedcba43210zyxwvu="
+        },
+        {
+          "name": "Received",
+          "value": "by perf-monitor-processor-abc123def456-xyz789 with SMTP id perf-monitor-processor-abc123def456-xyz789-1-PERF789ABC-2 2024-12-16 19:45:21.45006896 +0000 UTC m=+8451234.567890123"
+        },
+        {
+          "name": "Received",
+          "value": "from perf-worker-default-789abc456def-ghi123 (unknown) by perf-gateway-7 (MS) with ESMTP id PerfW-DQfUWjVSU-wmdiFqR for <sre-team@acmetech.io>; Thu, 16 Dec 2024 19:45:21.234 +0000 (UTC)"
+        },
+        {
+          "name": "Content-Type",
+          "value": "multipart/alternative; boundary=\"===============9876543210987654321==\""
+        },
+        {
+          "name": "MIME-Version",
+          "value": "1.0"
+        },
+        {
+          "name": "Subject",
+          "value": "USER-API-LATENCY - PerformanceWarning: High response times detected in user authentication endpoint (PerformanceWarning)"
+        },
+        {
+          "name": "From",
+          "value": "MonitoringService <alerts@notifications.monitoringservice.com>"
+        },
+        {
+          "name": "Date",
+          "value": "Thu, 16 Dec 2024 19:45:22 +0000 (UTC)"
+        },
+        {
+          "name": "X-MonitoringService-Project",
+          "value": "user-api"
+        },
+        {
+          "name": "X-Alert-Level",
+          "value": "warning"
+        },
+        {
+          "name": "X-Alert-Type",
+          "value": "performance"
+        },
+        {
+          "name": "List-ID",
+          "value": "performance-alerts.user-api.monitoringservice.com"
+        },
+        {
+          "name": "Message-ID",
+          "value": "<perf-alert-message-id-98765@notifications.monitoringservice.com>"
+        },
+        {
+          "name": "Reply-To",
+          "value": "no-reply@notifications.monitoringservice.com"
+        }
+      ],
+      "body": {
+        "size": 0
+      },
+      "parts": [
+        {
+          "partId": "0",
+          "mimeType": "text/plain",
+          "filename": "",
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "text/plain; charset=utf-8"
+            },
+            {
+              "name": "MIME-Version",
+              "value": "1.0"
+            },
+            {
+              "name": "Content-Transfer-Encoding",
+              "value": "quoted-printable"
+            }
+          ],
+          "body": {
+            "size": 890,
+            "data": "UGVyZm9ybWFuY2UgQWxlcnQNCi0tLS0tLS0tLS0tLS0tLS0NCg0KaHR0cHM6Ly9hY21ldGVjaC5tb25pdG9yaW5nc2VydmljZS5pby9kYXNoYm9hcmQvdXNlci1hcGkvYWxlcnRzLzk4NzY1NDM4Lz9yZWZlcnJlcj1hbGVydF9lbWFpbCZhbGVydF90eXBlPWVtYWlsJmFsZXJ0X3RpbWVzdGFtcD0xNzM0MzgyNTIyMDAwJmFsZXJ0X3J1bGVfaWQ9OTg3NjU0MzImbm90aWZpY2F0aW9uX3V1aWQ9cGVyZi1hbGVydC11dWlkLTk4NzYtNTQzMi0xMjM0LTU2Nzg5MGFiY2RlZg0KDQoNClRhZ3MNCi0tLS0NCg0KKiBlbnZpcm9ubWVudCA9IHByb2R1Y3Rpb24NCiogaGFuZGxlZCA9IG5vDQoqIGxldmVsID0gd2FybmluZw0KKiBtZXRyaWMgPSByZXNwb25zZV90aW1lDQoqIG9zID0gTGludXggIzEgU01QIFR1ZSBEZWMgMTYgMTk6NDU6MjIgVVRDIDIwMjQNCiogc2VydmVyX25hbWUgPSB1c2VyLWFwaS1wcm9kLXNlcnZlci0wMw0KKiBzZXJ2aWNlID0gdXNlci1hcGkNCiogZW5kcG9pbnQgPSAvYXBpL3YxL2F1dGgvbG9naW4NCg0KUGVyZm9ybWFuY2UgSXNzdWUNCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCg0KUGVyZm9ybWFuY2VXYXJuaW5nOiBIaWdoIHJlc3BvbnNlIHRpbWVzIGRldGVjdGVkIGluIHVzZXIgYXV0aGVudGljYXRpb24gZW5kcG9pbnQNCg0KPT09IFBlcmZvcm1hbmNlIGRlZ3JhZGF0aW9uIGRldGVjdGVkID09PQ0KDQpBdmVyYWdlIHJlc3BvbnNlIHRpbWU6IDIuNXMgKHRocmVzaG9sZDogMS4wcykNCjk1dGggcGVyY2VudGlsZTogNC4ycw0KUmVxdWVzdCBjb3VudDogMTIzNDUNCkVycm9yIHJhdGU6IDIuMSUNCg0KRW5kcG9pbnQ6IC9hcGkvdjEvYXV0aC9sb2dpbg0KVGltZSByYW5nZTogMjAyNC0xMi0xNiAxOTozMDowMCAtIDE5OjQ1OjAwIFVUQw0KDQpSZWNvbW1lbmRhdGlvbnM6DQotIENoZWNrIGRhdGFiYXNlIGNvbm5lY3Rpb24gcG9vbA0KLSBSZXZpZXcgYXV0aGVudGljYXRpb24gcXVlcmllcw0KLSBDb25zaWRlciBjYWNoaW5nIHN0cmF0ZWd5DQoNClVzZXINCi0tLS0tLS0tLS0tLQ0KDQplbWFpbDogc3JlLXRlYW1AYWNtZXRlY2guaW8NCg0KVW5zdWJzY3JpYmU6DQpodHRwczovL2FjbWV0ZWNoLm1vbml0b3JpbmdzZXJ2aWNlLmlvL3Vuc3Vic2NyaWJlL3BlcmYtdG9rZW4tOTg3Ng=="
+          }
+        },
+        {
+          "partId": "1",
+          "mimeType": "text/html",
+          "filename": "",
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "text/html; charset=utf-8"
+            },
+            {
+              "name": "MIME-Version",
+              "value": "1.0"
+            },
+            {
+              "name": "Content-Transfer-Encoding",
+              "value": "quoted-printable"
+            }
+          ],
+          "body": {
+            "size": 15750,
+            "data": "PCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVhZD4KICA8bWV0YSBjaGFyc2V0PSJ1dGYtOCI+CiAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xIj4KICA8dGl0bGU+UGVyZm9ybWFuY2UgQWxlcnQ8L3RpdGxlPgo8L2hlYWQ+Cjxib2R5PgogIDxoMT5QZXJmb3JtYW5jZSBXYXJuaW5nPC9oMT4KICA8cD5IaWdoIHJlc3BvbnNlIHRpbWVzIGRldGVjdGVkIGluIGF1dGhlbnRpY2F0aW9uIHNlcnZpY2UuPC9wPgogIDxwPkF2ZXJhZ2UgcmVzcG9uc2UgdGltZTogMi41cyAodGhyZXNob2xkOiAxLjBzKTwvcD4KICA8cD5BZmZlY3RlZCBlbmRwb2ludDogL2FwaS92MS9hdXRoL2xvZ2luPC9wPgogIDxwPlRpbWUgcmFuZ2U6IDIwMjQtMTItMTYgMTk6MzA6MDAgLSAxOTo0NTowMCBVVEM8L3A+CiAgPGEgaHJlZj0iaHR0cHM6Ly90ZXN0Y29tcGFueS5tb25pdG9yaW5nc2VydmljZS5pby9kYXNoYm9hcmQvZnJvbnRlbmQtYXBwL2FsZXJ0cy85ODc2NTQzOCI+VmlldyBEZXRhaWxzPC9hPgo8L2JvZHk+CjwvaHRtbD4="
+          }
+        }
+      ]
+    },
+    "sizeEstimate": 22100,
+    "historyId": "test456",
+    "internalDate": "1734382522000"
+  }
+}

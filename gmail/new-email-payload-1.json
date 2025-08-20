@@ -1,0 +1,165 @@
+{
+  "result": {
+    "id": "sample123456789abcdef",
+    "threadId": "sample123456789abcdef",
+    "labelIds": [
+      "UNREAD",
+      "CATEGORY_UPDATES",
+      "INBOX"
+    ],
+    "snippet": "Critical alert from payment-gateway. AlertService View on AlertService New critical issue We notified recently active members in the payment-gateway project of this issue Issue ConnectionError database timeout An error has occurred, connection pool exhausted",
+    "payload": {
+      "partId": "",
+      "mimeType": "multipart/alternative",
+      "filename": "",
+      "headers": [
+        {
+          "name": "Delivered-To",
+          "value": "devops@techcorp.com"
+        },
+        {
+          "name": "Received",
+          "value": "by 1010:a05:7010:a2d2:b0:485:2111:1111 with SMTP id abc2132p3078426mdc;        Wed, 15 Dec 2024 10:30:15 -0800 (PST)"
+        },
+        {
+          "name": "X-Google-Smtp-Source",
+          "value": "AGHT+IESampleGoogleSmtpSourceIdForTestingPurposes123456789abcdef"
+        },
+        {
+          "name": "X-Received",
+          "value": "by 1010:a05:7010:a2d2:b0:485:2111:1111 with SMTP id af79cd13be357-7ea08dbce77mr2254385a.7.1734294615000;        Wed, 15 Dec 2024 10:30:15 -0800 (PST)"
+        },
+        {
+          "name": "ARC-Seal",
+          "value": "i=1; a=rsa-sha256; t=1734294615; cv=none;        d=google.com; s=arc-20240605;        b=SampleArcSealValueForTestingPurposesQwErTyUiOpAsDfGhJkLzXcVbNm1234567890"
+        },
+        {
+          "name": "ARC-Message-Signature",
+          "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;        h=to:reply-to:message-id:list-id:date:from:subject:mime-version         :dkim-signature;        bh=sampleArcMessageHashForTestingPurposes123456789=;        fh=sampleArcMessageHashFinalForTestingPurposes=;        b=SampleArcMessageSignatureForTestingPurposesAbCdEfGhIjKlMnOpQrStUvWxYz123456789;"
+        },
+        {
+          "name": "ARC-Authentication-Results",
+          "value": "i=1; mx.google.com;       dkim=pass header.i=@alertservice.com header.s=alerts header.b=SampleDkim123;       spf=pass (google.com: domain of bounces+sample123-devops=techcorp.com@md.alertservice.com designates 167.89.84.75 as permitted sender) smtp.mailfrom=\"bounces+sample123-devops=techcorp.com@md.alertservice.com\";       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=md.alertservice.com"
+        },
+        {
+          "name": "Return-Path",
+          "value": "<bounces+sample123-devops=techcorp.com@md.alertservice.com>"
+        },
+        {
+          "name": "Received",
+          "value": "from alerts.md.alertservice.com (alerts.md.alertservice.com. [167.89.84.75])        by mx.google.com with ESMTPS id af79cd13be357-7ea08858affsi3102685a.458.2024.12.15.10.30.14        for <devops@techcorp.com>        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);        Wed, 15 Dec 2024 10:30:15 -0800 (PST)"
+        },
+        {
+          "name": "Received-SPF",
+          "value": "pass (google.com: domain of bounces+sample123-devops=techcorp.com@md.alertservice.com designates 167.89.84.75 as permitted sender) client-ip=167.89.84.75;"
+        },
+        {
+          "name": "Authentication-Results",
+          "value": "mx.google.com;       dkim=pass header.i=@alertservice.com header.s=alerts header.b=SampleDkim123;       spf=pass (google.com: domain of bounces+sample123-devops=techcorp.com@md.alertservice.com designates 167.89.84.75 as permitted sender) smtp.mailfrom=\"bounces+sample123-devops=techcorp.com@md.alertservice.com\";       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=md.alertservice.com"
+        },
+        {
+          "name": "DKIM-Signature",
+          "value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=alertservice.com; h=content-type:mime-version:subject:from:date:list-id:reply-to:to:cc: content-type:date:from:subject:to; s=alerts; bh=sampleDkimBodyHashForTestingPurposes123456789=; b=SampleDkimSignatureForTestingPurposesQwErTyUiOpAsDfGhJkLzXcVbNm1234567890AbCdEfGhIjKlMnOpQrStUvWxYz="
+        },
+        {
+          "name": "Received",
+          "value": "by alert-processor-6d74848c9-wmzv7 with SMTP id alert-processor-6d74848c9-wmzv7-1-68A635C1-7 2024-12-15 18:30:14.19006896 +0000 UTC m=+6731074.743039280"
+        },
+        {
+          "name": "Received",
+          "value": "from alert-worker-default-6dd5595955-v75wv (unknown) by alert-gateway-5 (SG) with ESMTP id LFeW-CQeTViURT-vlchEpQ for <devops@techcorp.com>; Wed, 15 Dec 2024 18:30:14.077 +0000 (UTC)"
+        },
+        {
+          "name": "Content-Type",
+          "value": "multipart/alternative; boundary=\"===============01234567890444444==\""
+        },
+        {
+          "name": "MIME-Version",
+          "value": "1.0"
+        },
+        {
+          "name": "Subject",
+          "value": "PAYMENT-GATEWAY-PROD - ConnectionError: Database connection pool exhausted (ConnectionError)"
+        },
+        {
+          "name": "From",
+          "value": "AlertService <noreply@md.alertservice.com>"
+        },
+        {
+          "name": "Date",
+          "value": "Wed, 15 Dec 2024 18:30:15 +0000 (UTC)"
+        },
+        {
+          "name": "X-AlertService-Project",
+          "value": "payment-gateway"
+        },
+        {
+          "name": "List-ID",
+          "value": "alerts.payment-gateway.alertservice.com"
+        },
+        {
+          "name": "Message-ID",
+          "value": "<sample-message-id-12345@md.alertservice.com>"
+        },
+        {
+          "name": "Reply-To",
+          "value": "noreply@md.alertservice.com"
+        }
+      ],
+      "body": {
+        "size": 0
+      },
+      "parts": [
+        {
+          "partId": "0",
+          "mimeType": "text/plain",
+          "filename": "",
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "text/plain; charset=us-ascii"
+            },
+            {
+              "name": "MIME-Version",
+              "value": "1.0"
+            },
+            {
+              "name": "Content-Transfer-Encoding",
+              "value": "7bit"
+            }
+          ],
+          "body": {
+            "size": 1250,
+            "data": "RGV0YWlscw0KLS0tLS0tLQ0KDQpodHRwczovL3RlY2hjb3JwLmFsZXJ0c2VydmljZS5pby9pc3N1ZXMvMTIzNDU2Nzg5MC8/cmVmZXJyZXI9YWxlcnRfZW1haWwmYWxlcnRfdHlwZT1lbWFpbCZhbGVydF90aW1lc3RhbXA9MTczNDI5NDYxNTAwMCZhbGVydF9ydWxlX2lkPTEyMzQ1Njc4Jm5vdGlmaWNhdGlvbl91dWlkPXNhbXBsZS11dWlkLTEyMzQtNTY3OC05MGFiLWNkZWYxMjM0NTY3OA0KDQoNClRhZ3MNCi0tLS0NCg0KKiBlbnZpcm9ubWVudCA9IHByb2R1Y3Rpb24NCiogaGFuZGxlZCA9IG5vDQoqIGxldmVsID0gZXJyb3INCiogbWVjaGFuaXNtID0gZGF0YWJhc2UNCiogb3MgPSBMaW51eCAjMSBTTVAgV2VkIERlYyAxNSAxODozMDoxNSBVVEMgMjAyNA0KKiBzZXJ2ZXJfbmFtZSA9IHBheW1lbnQtZ2F0ZXdheS1wcm9kLXNlcnZlci0wMQ0KKiBzZXJ2aWNlID0gcGF5bWVudC1nYXRld2F5DQoNCkV4Y2VwdGlvbg0KLS0tLS0tLS0tLS0NCg0KQ29ubmVjdGlvbkVycm9yOiBEYXRhYmFzZSBjb25uZWN0aW9uIHBvb2wgZXhoYXVzdGVkDQoNCj09PSBEYXRhYmFzZSBjb25uZWN0aW9uIGlzc3VlIGRldGVjdGVkID09PQ0KDQpBbGwgYXZhaWxhYmxlIGNvbm5lY3Rpb25zIGluIHRoZSBwb29sIGFyZSBjdXJyZW50bHkgaW4gdXNlLg0KQ29uc2lkZXIgaW5jcmVhc2luZyB0aGUgcG9vbCBzaXplIG9yIGltcHJvdmluZyBjb25uZWN0aW9uIGhhbmRsaW5nLg0KDQpTdGFjayB0cmFjZTogDQogIGFwcC9zZXJ2aWNlcy9wYXltZW50X3NlcnZpY2UucmI6NDI6aW4gYHByb2Nlc3NfcGF5bWVudCcNCiAgYXBwL2NvbnRyb2xsZXJzL3BheW1lbnRzX2NvbnRyb2xsZXIucmI6MjM6aW4gYGNyZWF0ZScNCg0KVXNlcg0KLS0tLS0tLS0tLS0NCg0KZW1haWw6IGRldm9wc0B0ZWNoY29ycC5jb20NCg0KVW5zdWJzY3JpYmU6DQpodHRwczovL3RlY2hjb3JwLmFsZXJ0c2VydmljZS5pby91bnN1YnNjcmliZS9zYW1wbGUtdG9rZW4tMTIzNA=="
+          }
+        },
+        {
+          "partId": "1",
+          "mimeType": "text/html",
+          "filename": "",
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "text/html; charset=us-ascii"
+            },
+            {
+              "name": "MIME-Version",
+              "value": "1.0"
+            },
+            {
+              "name": "Content-Transfer-Encoding",
+              "value": "7bit"
+            }
+          ],
+          "body": {
+            "size": 18500,
+            "data": "PCFET0NUWVBFIGh0bWw+DQo8aHRtbCBzdHlsZT0iZm9udC13ZWlnaHQ6IDQwMCI+DQo8aGVhZCBzdHlsZT0iZm9udC13ZWlnaHQ6IDQwMCI+DQogIDxtZXRhIGNoYXJzZXQ9InV0Zi04IiBzdHlsZT0iZm9udC13ZWlnaHQ6IDQwMCI+DQpTYW1wbGUgSFRNTCBlbWFpbCBjb250ZW50IGVuY29kZWQgaW4gYmFzZTY0IGZvciB0ZXN0aW5nIHB1cnBvc2VzLiBUaGlzIHdvdWxkIGNvbnRhaW4gdGhlIGZ1bGwgSFRNTCBlbWFpbCBib2R5IHdpdGggaW5saW5lIENTUyBhbmQgZm9ybWF0dGluZy4="
+          }
+        }
+      ]
+    },
+    "sizeEstimate": 25000,
+    "historyId": "sample123",
+    "internalDate": "1734294615000"
+  }
+}
