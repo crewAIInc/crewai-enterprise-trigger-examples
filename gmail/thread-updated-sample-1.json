@@ -1,0 +1,173 @@
+{
+  "result": {
+    "id": "thread123abc456def789",
+    "threadId": "thread123abc456def789",
+    "labelIds": [
+      "UNREAD",
+      "CATEGORY_UPDATES",
+      "INBOX"
+    ],
+    "snippet": "Critical deployment failure from api-gateway. AlertService View on AlertService New critical issue We notified recently active members in the api-gateway project of this issue Issue DeploymentError kubernetes pod failure An error has occurred, deployment rollback initiated",
+    "payload": {
+      "partId": "",
+      "mimeType": "multipart/alternative",
+      "filename": "",
+      "headers": [
+        {
+          "name": "Delivered-To",
+          "value": "devops@techcorp.io"
+        },
+        {
+          "name": "Received",
+          "value": "by 2002:a05:7010:b09g:c0:586:420h:59g8 with SMTP id pd16csp4189537nef;        Thu, 17 Dec 2024 08:15:45 -0800 (PST)"
+        },
+        {
+          "name": "X-Google-Smtp-Source",
+          "value": "AGHT+IFSampleGoogleSmtpSourceForThreadUpdateTesting123456789xyz"
+        },
+        {
+          "name": "X-Received",
+          "value": "by 2002:a05:620a:579i:c0:8f9:48g:g475 with SMTP id bg80de14cf468-8fa19efdf88mr3365496b.8.1734447345123;        Thu, 17 Dec 2024 08:15:45 -0800 (PST)"
+        },
+        {
+          "name": "ARC-Seal",
+          "value": "i=1; a=rsa-sha256; t=1734447345; cv=none;        d=google.com; s=arc-20240605;        b=SampleArcSealForThreadUpdateTestingQwErTyUiOpAsDfGhJkLzXcVbNm1234567890AbCdEf         GhIjKlMnOpQrStUvWxYzBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz         1A2B3C4D5E6F7G8H9I0J1K2L3M4N5O6P7Q8R9S0T1U2V3W4X5Y6Z7A8B9C0D1E2F3G4H5I6J7"
+        },
+        {
+          "name": "ARC-Message-Signature",
+          "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;        h=to:reply-to:message-id:list-id:date:from:subject:mime-version         :dkim-signature;        bh=sampleThreadUpdateHashForTesting123456789=;        fh=sampleThreadUpdateFinalHashForTesting456=;        b=SampleThreadUpdateArcMessageSignatureForTestingPurposes123456789         QwErTyUiOpAsDfGhJkLzXcVbNm1234567890AbCdEfGhIjKlMnOpQrStUvWxYz         BbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1A2B3C4D5E6F7G8H9I;        dara=google.com"
+        },
+        {
+          "name": "ARC-Authentication-Results",
+          "value": "i=1; mx.google.com;       dkim=pass header.i=@alertservice.io header.s=deploy header.b=SampleDeploy123;       spf=pass (google.com: domain of bounces+deploy456-devops=techcorp.io@md.alertservice.io designates 198.51.100.42 as permitted sender) smtp.mailfrom=\"bounces+deploy456-devops=techcorp.io@md.alertservice.io\";       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=md.alertservice.io"
+        },
+        {
+          "name": "Return-Path",
+          "value": "<bounces+deploy456-devops=techcorp.io@md.alertservice.io>"
+        },
+        {
+          "name": "Received",
+          "value": "from deploy-alerts.md.alertservice.io (deploy-alerts.md.alertservice.io. [198.51.100.42])        by mx.google.com with ESMTPS id bg80de14cf468-8fa19efdf88si4123456a.789.2024.12.17.08.15.44        for <devops@techcorp.io>        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 17 Dec 2024 08:15:45 -0800 (PST)"
+        },
+        {
+          "name": "Received-SPF",
+          "value": "pass (google.com: domain of bounces+deploy456-devops=techcorp.io@md.alertservice.io designates 198.51.100.42 as permitted sender) client-ip=198.51.100.42;"
+        },
+        {
+          "name": "Authentication-Results",
+          "value": "mx.google.com;       dkim=pass header.i=@alertservice.io header.s=deploy header.b=SampleDeploy123;       spf=pass (google.com: domain of bounces+deploy456-devops=techcorp.io@md.alertservice.io designates 198.51.100.42 as permitted sender) smtp.mailfrom=\"bounces+deploy456-devops=techcorp.io@md.alertservice.io\";       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=md.alertservice.io"
+        },
+        {
+          "name": "DKIM-Signature",
+          "value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=alertservice.io; h=content-type:mime-version:subject:from:date:list-id:reply-to:to:cc: content-type:date:from:subject:to; s=deploy; bh=sampleDeploymentDkimBodyHashForTesting123=; b=SampleDeploymentDkimSignatureForTestingPurposes123456789QwErTyUiOpAsDfGhJkL zcQyOFSBUtmQtJhGWZm00FAFmZOPG2w0BQGqMgws2UiGYkMDCeq9aZAuph76riDEexjoBh daEqtgddgZNl8BT5xCvCq47iWGhMkB7e4="
+        },
+        {
+          "name": "Received",
+          "value": "by deploy-processor-abc123def456-ghi789 with SMTP id deploy-processor-abc123def456-ghi789-1-DEPLOY123ABC-4 2024-12-17 16:15:44.45006896 +0000 UTC m=+7892345.123456789"
+        },
+        {
+          "name": "Received",
+          "value": "from deploy-worker-default-789def456ghi-jkl012 (unknown) by deploy-gateway-7 (AG) with ESMTP id DeployW-EQgVXkWTU-xndjGrS for <devops@techcorp.io>; Thu, 17 Dec 2024 16:15:44.234 +0000 (UTC)"
+        },
+        {
+          "name": "Content-Type",
+          "value": "multipart/alternative; boundary=\"===============5678901234567890234==\""
+        },
+        {
+          "name": "MIME-Version",
+          "value": "1.0"
+        },
+        {
+          "name": "Subject",
+          "value": "API-GATEWAY-PROD - DeploymentError: Kubernetes pod startup failure during rolling update (DeploymentError)"
+        },
+        {
+          "name": "From",
+          "value": "AlertService <noreply@md.alertservice.io>"
+        },
+        {
+          "name": "Date",
+          "value": "Thu, 17 Dec 2024 16:15:44 +0000 (UTC)"
+        },
+        {
+          "name": "X-AlertService-Project",
+          "value": "api-gateway"
+        },
+        {
+          "name": "X-Alert-Type",
+          "value": "deployment"
+        },
+        {
+          "name": "X-Alert-Level",
+          "value": "critical"
+        },
+        {
+          "name": "List-ID",
+          "value": "deployment-alerts.api-gateway.alertservice.io"
+        },
+        {
+          "name": "Message-ID",
+          "value": "<deploy-alert-message-id-56789@md.alertservice.io>"
+        },
+        {
+          "name": "Reply-To",
+          "value": "noreply@md.alertservice.io"
+        }
+      ],
+      "body": {
+        "size": 0
+      },
+      "parts": [
+        {
+          "partId": "0",
+          "mimeType": "text/plain",
+          "filename": "",
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "text/plain; charset=us-ascii"
+            },
+            {
+              "name": "MIME-Version",
+              "value": "1.0"
+            },
+            {
+              "name": "Content-Transfer-Encoding",
+              "value": "7bit"
+            }
+          ],
+          "body": {
+            "size": 1567,
+            "data": "RGVwbG95bWVudCBBbGVydA0KLS0tLS0tLS0tLS0tLS0tLS0NCg0KaHR0cHM6Ly90ZWNoY29ycC5hbGVydHNlcnZpY2UuaW8vaXNzdWVzLzU2Nzg5MDEyMzQvP3JlZmVycmVyPWFsZXJ0X2VtYWlsJmFsZXJ0X3R5cGU9ZW1haWwmYWxlcnRfdGltZXN0YW1wPTE3MzQ0NDczNDUwMDAmYWxlcnRfcnVsZV9pZD01Njc4OTAxMiZub3RpZmljYXRpb25fdXVpZD1kZXBsb3ktYWxlcnQtdXVpZC01Njc4LTkwMTItMzQ1Ni03ODkwMTJhYmNkZWYNCg0KDQpUYWdzDQotLS0tDQoNCiogZW52aXJvbm1lbnQgPSBwcm9kdWN0aW9uDQoqIGhhbmRsZWQgPSBubw0KKiBsZXZlbCA9IGNyaXRpY2FsDQoqIG1lY2hhbmlzbSA9IGt1YmVybmV0ZXMNCiogb3MgPSBMaW51eCAjMSBTTVAgVGh1IERlYyAxNyAxNjoxNTo0NCBVVEMGIDI"
+          }
+        },
+        {
+          "partId": "1",
+          "mimeType": "text/html",
+          "filename": "",
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "text/html; charset=us-ascii"
+            },
+            {
+              "name": "MIME-Version",
+              "value": "1.0"
+            },
+            {
+              "name": "Content-Transfer-Encoding",
+              "value": "7bit"
+            }
+          ],
+          "body": {
+            "size": 23456,
+            "data": "PCFET0NUWVBFIGh0bWw+DQo8aHRtbCBzdHlsZT0iZm9udC13ZWlnaHQ6IDQwMCI+DQo8aGVhZCBzdHlsZT0iZm9udC13ZWlnaHQ6IDQwMCI+DQogIDxtZXRhIGNoYXJzZXQ9InV0Zi04IiBzdHlsZT0iZm9udC13ZWlnaHQ6IDQwMCI+DQogIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MSIgc3R5bGU9ImZvbnQtd2VpZ2h0OiA0MDAiPg0KDQpTYW1wbGUgZGVwbG95bWVudCBhbGVydCBIVE1MIGVtYWlsIGNvbnRlbnQgZW5jb2RlZCBpbiBiYXNlNjQgZm9yIHRlc3RpbmcgcHVycG9zZXMuIFRoaXMgd291bGQgY29udGFpbiB0aGUgZnVsbCBIVE1MIGVtYWlsIGJvZHkgd2l0aCBkZXBsb3ltZW50IGZhaWx1cmUgZGV0YWlscywgc3RhY2sgdHJhY2VzLCBrdWJlcm5ldGVzIGV2ZW50cywgYW5kIHJlY292ZXJ5IGFjdGlvbnMu"
+          }
+        }
+      ]
+    },
+    "sizeEstimate": 31245,
+    "historyId": "deploy789",
+    "internalDate": "1734447344000"
+  }
+}
