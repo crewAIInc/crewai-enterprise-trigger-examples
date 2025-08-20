@@ -1,16 +1,6 @@
 # CrewAI Enterprise Trigger Payload Samples
 
-This repository contains sample payload examples for testing Gmail API integrations and webhook triggers in CrewAI Enterprise environments. All data has been sanitized and replaced with safe, non-sensitive sample values for development and testing purposes.
-
-## 📋 Overview
-
-The samples in this repository represent realistic Gmail API payloads that you might encounter when building integrations with email monitoring, alerting systems, and notification services. These payloads are useful for:
-
-- **Testing webhook integrations** with Gmail API
-- **Developing email processing workflows**
-- **Building monitoring and alerting systems**
-- **Creating automated response systems**
-- **Validating payload parsing logic**
+This repository contains examples of Trigger payloads to help you develop Automation Triggers check it out [here](https://docs.crewai.com/en/enterprise/guides/automation-triggers). All data has been sanitized and replaced with safe, non-sensitive sample values for development and testing.
 
 ## 📁 Repository Structure
 
