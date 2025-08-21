@@ -1,0 +1,10 @@
+{
+    "result": {
+      "kind": "drive#file",
+      "id": "XXXXXXXXXXXX",
+      "name": "meta.json",
+      "mimeType": "application/json",
+      "createdTime": "2025-08-21T12:32:23.992Z",
+      "modifiedTime": "2025-08-21T12:32:54.245Z"
+    }
+  }

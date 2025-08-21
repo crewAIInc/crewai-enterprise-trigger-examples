@@ -1,0 +1,10 @@
+{
+    "result": {
+      "kind": "drive#file",
+      "id": "XXXXXXXXXXXX",
+      "name": "output.wav",
+      "mimeType": "audio/x-wav",
+      "createdTime": "2025-08-21T12:32:39.091Z",
+      "modifiedTime": "2025-08-21T12:32:53.221Z"
+    }
+  }

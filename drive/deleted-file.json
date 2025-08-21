@@ -1,0 +1,10 @@
+{
+  "result": {
+    "kind": "drive#change",
+    "removed": true,
+    "fileId": "XXXXXXXXXXXX",
+    "time": "2023-05-08T09:29:25.032Z",
+    "type": "file",
+    "changeType": "file"
+  }
+}
