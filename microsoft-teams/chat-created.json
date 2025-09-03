@@ -1,0 +1,17 @@
+{
+    "result": {
+      "chatType": "oneOnOne",
+      "createdDateTime": "2025-07-17T18:15:41.055Z",
+      "id": "[REDACTED]",
+      "isHiddenForAllMembers": false,
+      "lastUpdatedDateTime": "2025-07-17T18:15:41.457Z",
+      "onlineMeetingInfo": null,
+      "tenantId": "[REDACTED]",
+      "topic": null,
+      "viewpoint": {
+        "isHidden": false,
+        "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+      },
+      "webUrl": "[REDACTED]"
+    }
+  }
