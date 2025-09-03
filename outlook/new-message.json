@@ -1,0 +1,56 @@
+{
+    "result": {
+      "@odata.etag": "W/\"XyZ123ABCDEFGHIJKLMNOP987654\"",
+      "bccRecipients": [],
+      "body": {
+        "content": "<html><head>\r\n</head></html>",
+        "contentType": "html"
+      },
+      "bodyPreview": "Thanks for joining us. Here are a couple of great ways to get started:\r\n\r\nWelcome!\r\n\r\nThanks for joining us. Here are a couple of great ways to get started:\r\n\r\nAzure DevOps\r\nCollaborate in the cloud with version control, agile, continuous delivery, app an",
+      "categories": [],
+      "ccRecipients": [],
+      "changeKey": "XyZ123ABCDEFGHIJKLMNOP987654",
+      "conversationId": "AAQkADEwMjM0NTY3ODlhYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejEyMzQ1Njc4OQ==",
+      "conversationIndex": "AQHaB9K5c3d7qnYPpkaMEuTrpURD2h==",
+      "createdDateTime": "2025-08-20T07:19:14Z",
+      "flag": {
+        "flagStatus": "notFlagged"
+      },
+      "from": {
+        "emailAddress": {
+          "address": "azuredevops@microsoft.com",
+          "name": "Azure DevOps"
+        }
+      },
+      "hasAttachments": false,
+      "id": "AAMkADk4MzIxNzY1LWJjZGUtNDMyMS1hZmVkLTk4NzY1NDMyMWFiY0BGAAAAAAAKpq4v5Kj_Rb9Dw1Iavt1nBwB9ymCEacB3RbVP8PDzqy4kAAAAAAEMAAB9ymCEacB3RbVP8PDzqy4kAADLs85nAAA=",
+      "importance": "normal",
+      "inferenceClassification": "focused",
+      "internetMessageId": "<[45b8cde9f12a3b456789012345678901-KGZHT53EN6XX36MPOGIXD6EKO6YGB4ECPSUH75UOGWJIF44FGWCFZNTRSQSBY6MTNWDHL6TQPCYYZSMONGVXZ8DGQCYWH4MVPB======@microsoft.com]>",
+      "isDeliveryReceiptRequested": null,
+      "isDraft": false,
+      "isRead": false,
+      "isReadReceiptRequested": false,
+      "lastModifiedDateTime": "2025-08-20T09:55:36Z",
+      "parentFolderId": "AQMkADk4MzIxNzY1LWJjZGUtNDMyMQAtYWZlZC05ODc2NTQzMjFhYmMALgAAAwqmri_kqP9Fv0PDUhq-3WcBAH3KYIRpwHdFtU_w8POrLiQAAAIBDAAAAA==",
+      "receivedDateTime": "2025-08-20T07:19:15Z",
+      "replyTo": [],
+      "sender": {
+        "emailAddress": {
+          "address": "azuredevops@microsoft.com",
+          "name": "Azure DevOps"
+        }
+      },
+      "sentDateTime": "2025-08-20T07:19:09Z",
+      "subject": "Welcome to Azure DevOps",
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "address": "user123@example.com",
+            "name": "John Smith"
+          }
+        }
+      ],
+      "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkADk4MzIxNzY1LWJjZGUtNDMyMQAtYWZlZC05ODc2NTQzMjFhYmMALgAAAwqmri_kqP9Fv0PDUhq-3WcBAH3KYIRpwHdFtU_w8POrLiQAAAIBDAAAAA%3D&exvsurl=1&viewmodel=ReadMessageItem"
+    }
+  }

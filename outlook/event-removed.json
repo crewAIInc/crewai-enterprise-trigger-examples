@@ -1,0 +1,8 @@
+{
+    "result": {
+      "@odata.etag": "W/\"XyZABCDEFGHIJKLMNOPQRSTUVWXYZ123456\"",
+      "@odata.id": "Users/ab12c345-6789-0def-ghij-klmnopqrstuv/Events/AQMkABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      "@odata.type": "#Microsoft.Graph.Event",
+      "id": "AQMkABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    }
+  }

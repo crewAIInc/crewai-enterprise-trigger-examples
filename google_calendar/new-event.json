@@ -1,0 +1,36 @@
+{
+    "result": {
+      "created": "2025-03-24T12:29:03.000Z",
+      "creator": {
+        "email": "user@example.com",
+        "self": true
+      },
+      "description": "<a href=\"https://www.getclockwise.com?utm_medium=referral&utm_source=gcal-event-desc&utm_campaign=lunch-clockwise\">Clockwise</a> scheduled this dynamic lunch block.\n\n<a href=\"https://www.getclockwise.com/app/your-ideal-day?highlight=true&utm_medium=referral&utm_source=gcal-event-desc&utm_campaign=lunch-settings#lunch\">Manage lunch</a> ⸱ <a href=\"https://support.getclockwise.com/article/171-lunch-events?utm_medium=referral&utm_source=gcal-event-desc&utm_campaign=lunch-helpcenter\">Learn more</a>",
+      "end": {
+        "dateTime": "2025-04-11T13:00:00-03:00",
+        "timeZone": "America/Sao_Paulo"
+      },
+      "etag": "\"3485638687662302\"",
+      "eventType": "default",
+      "guestsCanInviteOthers": false,
+      "htmlLink": "https://www.google.com/calendar/event?eid=example",
+      "iCalUID": "example-uid@google.com",
+      "id": "example-id",
+      "kind": "calendar#event",
+      "organizer": {
+        "email": "user@example.com",
+        "self": true
+      },
+      "reminders": {
+        "useDefault": true
+      },
+      "sequence": 0,
+      "start": {
+        "dateTime": "2025-04-11T12:00:00-03:00",
+        "timeZone": "America/Sao_Paulo"
+      },
+      "status": "confirmed",
+      "summary": "❇️ Lunch (via Clockwise)",
+      "updated": "2025-03-24T12:29:03.831Z"
+    }
+  }

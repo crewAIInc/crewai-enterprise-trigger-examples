@@ -1,0 +1,157 @@
+{
+    "result": {
+      "attendees": [
+        {
+          "email": "[REDACTED]",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "[REDACTED]",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "[REDACTED]",
+          "organizer": true,
+          "responseStatus": "accepted"
+        },
+        {
+          "displayName": "[REDACTED]",
+          "email": "[REDACTED]",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "[REDACTED]",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "[REDACTED]",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "[REDACTED]",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "[REDACTED]",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "[REDACTED]",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "[REDACTED]",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "[REDACTED]",
+          "responseStatus": "declined"
+        },
+        {
+          "email": "[REDACTED]",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "[REDACTED]",
+          "responseStatus": "accepted",
+          "self": true
+        },
+        {
+          "email": "[REDACTED]",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "[REDACTED]",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "[REDACTED]",
+          "responseStatus": "accepted"
+        }
+      ],
+      "conferenceData": {
+        "conferenceId": "[REDACTED]",
+        "conferenceSolution": {
+          "iconUri": "[REDACTED]",
+          "key": {
+            "type": "addOn"
+          },
+          "name": "Zoom Meeting"
+        },
+        "entryPoints": [
+          {
+            "entryPointType": "video",
+            "label": "[REDACTED]",
+            "meetingCode": "[REDACTED]",
+            "passcode": "[REDACTED]",
+            "uri": "[REDACTED]"
+          },
+          {
+            "entryPointType": "phone",
+            "label": "[REDACTED]",
+            "passcode": "[REDACTED]",
+            "regionCode": "US",
+            "uri": "[REDACTED]"
+          },
+          {
+            "entryPointType": "more",
+            "uri": "[REDACTED]"
+          }
+        ],
+        "notes": "[REDACTED]",
+        "parameters": {
+          "addOnParameters": {
+            "parameters": {
+              "creatorUserId": "[REDACTED]",
+              "meetingType": "2",
+              "meetingUuid": "[REDACTED]",
+              "originalEventId": "[REDACTED]",
+              "realMeetingId": "[REDACTED]",
+              "scriptId": "[REDACTED]"
+            }
+          }
+        }
+      },
+      "created": "2024-11-06T14:14:40.000Z",
+      "creator": {
+        "email": "[REDACTED]"
+      },
+      "description": "<b>Agenda:</b><br>Engineering:<br><ul><li>Recap on weekly updates<ul><li>New Features: demo</li><li>Fixes</li></ul></li><li>Roadmap for the next week</li></ul><br>GTM:<br><ul><li>What customers are saying: Bugs/Features</li><li>Help label priorities for eng team.- features:    - Overall demo of x features ex) observability    - Deep dives on use case examples ex) contract analysis tool</li><li>Deep dive on use cases built together with Engineering</li></ul>",
+      "end": {
+        "dateTime": "2025-02-14T16:00:00-03:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "etag": "[REDACTED]",
+      "eventType": "default",
+      "extendedProperties": {
+        "shared": {
+          "meetingId": "[REDACTED]",
+          "meetingParams": "[REDACTED]",
+          "zmMeetingNum": "[REDACTED]"
+        }
+      },
+      "htmlLink": "[REDACTED]",
+      "iCalUID": "[REDACTED]",
+      "id": "[REDACTED]",
+      "kind": "calendar#event",
+      "organizer": {
+        "email": "[REDACTED]"
+      },
+      "originalStartTime": {
+        "dateTime": "2025-02-14T15:00:00-03:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "recurringEventId": "[REDACTED]",
+      "reminders": {
+        "useDefault": true
+      },
+      "sequence": 1,
+      "start": {
+        "dateTime": "2025-02-14T15:00:00-03:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "status": "confirmed",
+      "summary": "GTM and Product & Engineering Demo + Sync",
+      "updated": "2025-05-22T09:15:58.349Z"
+    }
+  }

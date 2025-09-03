@@ -1,0 +1,42 @@
+{
+    "result": {
+      "created": "2025-03-24T13:52:31.000Z",
+      "creator": {
+        "email": "[REDACTED]",
+        "self": true
+      },
+      "end": {
+        "date": "2025-09-04"
+      },
+      "etag": "[REDACTED]",
+      "eventType": "workingLocation",
+      "htmlLink": "[REDACTED]",
+      "iCalUID": "[REDACTED]",
+      "id": "[REDACTED]",
+      "kind": "calendar#event",
+      "organizer": {
+        "email": "[REDACTED]",
+        "self": true
+      },
+      "originalStartTime": {
+        "date": "2025-09-03"
+      },
+      "recurringEventId": "[REDACTED]",
+      "reminders": {
+        "useDefault": false
+      },
+      "sequence": 0,
+      "start": {
+        "date": "2025-09-03"
+      },
+      "status": "confirmed",
+      "summary": "Casa",
+      "transparency": "transparent",
+      "updated": "2025-03-24T13:52:31.418Z",
+      "visibility": "public",
+      "workingLocationProperties": {
+        "homeOffice": {},
+        "type": "homeOffice"
+      }
+    }
+  }
